@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <title>Транслитерация</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Транслитерация">
+    <meta name="desctiption" content="Транслитерация">
+    <meta name="viewport" content="width=device-width">
+
+    <body>
+        <form method="post" action=''>
+            {% csrf_token %}
+            <table>
+                {{ form }}
+            </table>
+            <input type="submit" value="Перевести">
+        </form>
+        <br>
+        <br>
+        <p>Результат: {{ result }} </p>
+        <p>Результат: {{ result2 }} </p>
+    </body>
+</html>
