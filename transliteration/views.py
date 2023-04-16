@@ -6,6 +6,7 @@ from .functions import translit, trancate
 
 def index(request):
     result = ""
+    result2 = ""
     form = TextForm()
     if request.method == "POST":
         text = request.POST.get("text")
